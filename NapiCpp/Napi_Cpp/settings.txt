@@ -1,0 +1,11 @@
+0
+0
+1
+9
+16
+.jpeg
+a
+b
+c
+J:\Projects\Cpp\Napi_Cpp\Napi_Cpp\library
+J:\Projects\Cpp\Napi_Cpp\Napi_Cpp\films

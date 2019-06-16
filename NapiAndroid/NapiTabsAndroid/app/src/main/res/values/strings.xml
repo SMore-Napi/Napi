@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Napi</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="scan">Начать сканирование</string>
+    <string name="action_info">Инфо</string>
+    <string name="action_language">Язык</string>
+    <string name="scanbegin">Для начала сканирования нажмите кнопку</string>
+    <string name="screenshot">Использовать изображение из галереи</string>
+    <string name="activity_settings_information_1_1">Год</string>
+    <string name="activity_settings_information_1_2">Страна</string>
+    <string name="activity_settings_information_1_3">Режиссер</string>
+    <string name="activity_settings_information_1_4">Сценарий</string>
+    <string name="activity_settings_information_1_5">Продюсер</string>
+    <string name="activity_settings_information_1_7">Композитор</string>
+    <string name="activity_settings_information_1_8">Жанр</string>
+    <string name="activity_settings_information_1_9">Описание</string>
+    <string name="activity_settings_information_1_Name">Название фильма:</string>
+    <string name="ok">OK</string>
+    <string name="timeOfImage">Время кадра:</string>
+    <string name="notitles">Нет записей</string>
+    <string name="information">Информация о фильме</string>
+    <string name="cancel">Отмена</string>
+    <string name="scanning">Сканирование...</string>
+
+
+</resources>

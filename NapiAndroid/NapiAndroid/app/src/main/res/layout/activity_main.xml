@@ -1,0 +1,647 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GreayVK">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:background="@color/GreayVK">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notitles"
+                android:id="@+id/titleEmpty"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/GreayVK"
+            android:id="@+id/scrollView_Tab2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/GreayVK">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:id="@+id/result1"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginEnd="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginStart="10dip"
+                    android:layout_marginLeft="10dip">
+
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="80dip"
+                        android:id="@+id/imageFilm1"
+                        android:scaleType="fitStart"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+
+                    <TextView
+                        android:id="@+id/textName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dip"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toEndOf="@+id/imageFilm1"
+                        android:layout_toRightOf="@+id/imageFilm1"
+                        android:fontFamily="sans-serif-medium"
+                        android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                        android:textSize="18sp"
+                        android:layout_toLeftOf="@+id/buttonDelete1"
+                        android:layout_toStartOf="@+id/buttonDelete1"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/text1"
+                        android:text="@string/timeOfImage"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/textName1"
+                        android:layout_alignLeft="@+id/textName1"
+                        android:layout_alignStart="@+id/textName1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textTime1"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/text1"
+                        android:layout_toEndOf="@+id/text1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp" />
+
+                    <Button
+                        android:id="@+id/buttonInformation1"
+                        android:color="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dip"
+                        android:onClick="buttonInformation_Click"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/buttonDelete1"
+                        android:layout_toStartOf="@+id/buttonDelete1" />
+
+                    <Button
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:id="@+id/buttonDelete1"
+                        android:onClick="remove"
+                        android:background="@drawable/icon_delete"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:id="@+id/result2"
+                    android:layout_below="@+id/result1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginEnd="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginStart="10dip"
+                    android:layout_marginLeft="10dip">
+
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="80dip"
+                        android:id="@+id/imageFilm2"
+                        android:scaleType="fitStart"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+
+
+
+                    <TextView
+                        android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dip"
+                        android:id="@+id/textName2"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageFilm2"
+                        android:layout_toEndOf="@+id/imageFilm2"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="5dip"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_toLeftOf="@+id/buttonDelete2"
+                        android:layout_toStartOf="@+id/buttonDelete2"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/text2"
+                        android:text="@string/timeOfImage"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/textName2"
+                        android:layout_alignLeft="@+id/textName2"
+                        android:layout_alignStart="@+id/textName2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textTime2"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/text2"
+                        android:layout_toEndOf="@+id/text2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                    <Button
+                        android:id="@+id/buttonInformation2"
+                        android:color="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dip"
+                        android:onClick="buttonInformation_Click"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/buttonDelete2"
+                        android:layout_toStartOf="@+id/buttonDelete2" />
+
+                    <Button
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:id="@+id/buttonDelete2"
+                        android:onClick="remove"
+                        android:background="@drawable/icon_delete"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:id="@+id/result3"
+                    android:layout_below="@+id/result2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginEnd="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginStart="10dip"
+                    android:layout_marginLeft="10dip">
+
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="80dip"
+                        android:id="@+id/imageFilm3"
+                        android:scaleType="fitStart"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+
+
+
+                    <TextView
+                        android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dip"
+                        android:id="@+id/textName3"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageFilm3"
+                        android:layout_toEndOf="@+id/imageFilm3"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="5dip"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_toLeftOf="@+id/buttonDelete3"
+                        android:layout_toStartOf="@+id/buttonDelete3"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/text3"
+                        android:text="@string/timeOfImage"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/textName3"
+                        android:layout_alignLeft="@+id/textName3"
+                        android:layout_alignStart="@+id/textName3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textTime3"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/text3"
+                        android:layout_toEndOf="@+id/text3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                    <Button
+                        android:id="@+id/buttonInformation3"
+                        android:color="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dip"
+                        android:onClick="buttonInformation_Click"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/buttonDelete3"
+                        android:layout_toStartOf="@+id/buttonDelete3" />
+
+                    <Button
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:id="@+id/buttonDelete3"
+                        android:onClick="remove"
+                        android:background="@drawable/icon_delete"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:id="@+id/result4"
+                    android:layout_below="@+id/result3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginEnd="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginStart="10dip"
+                    android:layout_marginLeft="10dip">
+
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="80dip"
+                        android:id="@+id/imageFilm4"
+                        android:scaleType="fitStart"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+
+
+
+                    <TextView
+                        android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dip"
+                        android:id="@+id/textName4"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageFilm4"
+                        android:layout_toEndOf="@+id/imageFilm4"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="5dip"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_toLeftOf="@+id/buttonDelete4"
+                        android:layout_toStartOf="@+id/buttonDelete4"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/text4"
+                        android:text="@string/timeOfImage"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/textName4"
+                        android:layout_alignLeft="@+id/textName4"
+                        android:layout_alignStart="@+id/textName4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textTime4"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/text4"
+                        android:layout_toEndOf="@+id/text4"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                    <Button
+                        android:id="@+id/buttonInformation4"
+                        android:color="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dip"
+                        android:onClick="buttonInformation_Click"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/buttonDelete4"
+                        android:layout_toStartOf="@+id/buttonDelete4" />
+
+                    <Button
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:id="@+id/buttonDelete4"
+                        android:onClick="remove"
+                        android:background="@drawable/icon_delete"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:id="@+id/result5"
+                    android:layout_below="@+id/result4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginEnd="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginStart="10dip"
+                    android:layout_marginLeft="10dip">
+
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="80dip"
+                        android:id="@+id/imageFilm5"
+                        android:scaleType="fitStart"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+
+
+
+                    <TextView
+                        android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dip"
+                        android:id="@+id/textName5"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageFilm5"
+                        android:layout_toEndOf="@+id/imageFilm5"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="5dip"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_toLeftOf="@+id/buttonDelete5"
+                        android:layout_toStartOf="@+id/buttonDelete5"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/text5"
+                        android:text="@string/timeOfImage"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/textName5"
+                        android:layout_alignLeft="@+id/textName5"
+                        android:layout_alignStart="@+id/textName5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textTime5"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/text5"
+                        android:layout_toEndOf="@+id/text5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                    <Button
+                        android:id="@+id/buttonInformation5"
+                        android:color="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dip"
+                        android:onClick="buttonInformation_Click"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/buttonDelete5"
+                        android:layout_toStartOf="@+id/buttonDelete5" />
+
+                    <Button
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:id="@+id/buttonDelete5"
+                        android:onClick="remove"
+                        android:background="@drawable/icon_delete"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dip"
+                    android:id="@+id/result6"
+                    android:layout_below="@+id/result5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginEnd="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginStart="10dip"
+                    android:layout_marginLeft="10dip">
+
+
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="80dip"
+                        android:id="@+id/imageFilm6"
+                        android:scaleType="fitStart"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+
+
+
+                    <TextView
+                        android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dip"
+                        android:id="@+id/textName6"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageFilm6"
+                        android:layout_toEndOf="@+id/imageFilm6"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="5dip"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_toLeftOf="@+id/buttonDelete6"
+                        android:layout_toStartOf="@+id/buttonDelete6"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/text6"
+                        android:text="@string/timeOfImage"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_below="@+id/textName6"
+                        android:layout_alignLeft="@+id/textName6"
+                        android:layout_alignStart="@+id/textName6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textTime6"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/text6"
+                        android:layout_toEndOf="@+id/text6"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                    <Button
+                        android:id="@+id/buttonInformation6"
+                        android:color="@android:color/transparent"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dip"
+                        android:onClick="buttonInformation_Click"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@+id/buttonDelete6"
+                        android:layout_toStartOf="@+id/buttonDelete6" />
+
+                    <Button
+                        android:id="@+id/buttonDelete6"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/icon_delete"
+                        android:onClick="remove" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:background="#ffffff">
+
+
+        <ImageButton
+            android:id="@+id/scanner"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="4dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/icon"
+            android:onClick="scanner"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon" />
+
+        <ImageButton
+            android:layout_toLeftOf="@id/scanner"
+            android:id="@+id/button2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/icon_gallery"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_gallery" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

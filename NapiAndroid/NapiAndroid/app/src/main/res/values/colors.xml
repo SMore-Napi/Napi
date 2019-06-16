@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#0099ff</color>
+    <color name="colorPrimary">#0099ff</color>
+    <color name="ColorPrimaryDark">#3399FF</color>
+    <color name="colorPrimaryDark">#3399FF</color>
+    <!--<color name="tabsScrollColor">#0066CC</color>-->
+    <color name="tabsScrollColor">#ffffff</color>
+    <color name="RoyalBlue1">#4876FF</color>
+    <color name="GreayVK">#ebeef3</color>
+    <color name="colorAccent">#ebeef3</color>
+</resources>

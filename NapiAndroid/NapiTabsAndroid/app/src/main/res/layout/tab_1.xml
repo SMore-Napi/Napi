@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/GreayVK">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relmain">
+
+        <ImageButton
+            android:id="@+id/scanner"
+            android:layout_width="200dip"
+            android:layout_height="200dip"
+            android:adjustViewBounds="false"
+            android:background="@drawable/icon"
+            android:onClick="scanner"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="92dp"/>
+
+        <Button
+            android:text="@string/screenshot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dip"
+            android:layout_marginStart="10dip"
+            android:id="@+id/button2"
+            android:textColor="@color/ColorPrimary"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/scanner"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="@string/scanbegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDescription"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

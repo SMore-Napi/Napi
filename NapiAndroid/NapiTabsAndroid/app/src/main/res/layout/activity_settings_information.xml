@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GreayVK">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/ColorPrimary">
+
+        <Button
+            android:id="@+id/button_back_MainActivity"
+            android:onClick="back_MainActivity"
+            android:background="@drawable/ic_arrow_back_white_24dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/information"
+            android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+            android:textColor="@color/tabsScrollColor"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/GreayVK">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/GreayVK">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/activity_settings_textName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/activity_settings_1_textNameOfFilm"
+                    android:layout_alignStart="@+id/activity_settings_1_textNameOfFilm"
+                    android:layout_below="@+id/activity_settings_1_textNameOfFilm"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_toEndOf="@+id/activity_settings_imageFilm"
+                    android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dip"
+                    android:layout_alignLeft="@+id/activity_settings_textName"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/activity_settings_textName"
+                    android:layout_toEndOf="@+id/activity_settings_imageFilm"
+                    android:text="@string/timeOfImage"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/activity_settings_textTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/textTime"
+                    android:layout_toRightOf="@+id/textTime"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <ImageView
+                    android:id="@+id/activity_settings_imageFilm"
+                    android:layout_width="120dip"
+                    android:layout_height="160dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitStart"/>
+
+                <TextView
+                    android:id="@+id/activity_settings_1_textNameOfFilm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/activity_settings_imageFilm"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@+id/activity_settings_imageFilm"
+                    android:layout_toRightOf="@+id/activity_settings_imageFilm"
+                    android:text="@string/activity_settings_information_1_Name"
+                    android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp">
+
+
+
+                <TextView
+                    android:text="@string/activity_settings_information_1_1"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/textInformationMore_1_1a"
+                    android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <TextView
+                    android:id="@+id/textInformationMore_1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginLeft="123dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginStart="123dp"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="@string/activity_settings_information_1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInformationMore_1_2a"
+                    android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/textInformationMore_1b"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <TextView
+                    android:id="@+id/textInformationMore_2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textInformationMore_1_2a"
+                    android:layout_alignBottom="@+id/textInformationMore_1_2a"
+                    android:layout_alignLeft="@+id/textInformationMore_1b"
+                    android:layout_alignStart="@+id/textInformationMore_1b"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="@string/activity_settings_information_1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInformationMore_1_3a"
+                    android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/textInformationMore_2b"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <TextView
+                    android:id="@+id/textInformationMore_3b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textInformationMore_1_3a"
+                    android:layout_alignBottom="@+id/textInformationMore_1_3a"
+                    android:layout_alignLeft="@+id/textInformationMore_1b"
+                    android:layout_alignStart="@+id/textInformationMore_1b"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="@string/activity_settings_information_1_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInformationMore_1_4a"
+                    android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/textInformationMore_3b"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <TextView
+                    android:id="@+id/textInformationMore_4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textInformationMore_1_4a"
+                    android:layout_alignBottom="@+id/textInformationMore_1_4a"
+                    android:layout_alignLeft="@+id/textInformationMore_1b"
+                    android:layout_alignStart="@+id/textInformationMore_1b"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="@string/activity_settings_information_1_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInformationMore_1_5a"
+                    android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/textInformationMore_4b"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <TextView
+                    android:id="@+id/textInformationMore_5b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textInformationMore_1_5a"
+                    android:layout_alignBottom="@+id/textInformationMore_1_5a"
+                    android:layout_alignLeft="@+id/textInformationMore_1b"
+                    android:layout_alignStart="@+id/textInformationMore_1b"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInformationMore_1_6a"
+                    android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/textInformationMore_5b"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <TextView
+                    android:id="@+id/textInformationMore_6b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textInformationMore_1_6a"
+                    android:layout_alignBottom="@+id/textInformationMore_1_6a"
+                    android:layout_alignLeft="@+id/textInformationMore_1b"
+                    android:layout_alignStart="@+id/textInformationMore_1b"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="@string/activity_settings_information_1_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInformationMore_1_7a"
+                    android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/textInformationMore_6b"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <TextView
+                    android:id="@+id/textInformationMore_7b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textInformationMore_1_7a"
+                    android:layout_alignBottom="@+id/textInformationMore_1_7a"
+                    android:layout_alignLeft="@+id/textInformationMore_1b"
+                    android:layout_alignStart="@+id/textInformationMore_1b"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="@string/activity_settings_information_1_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInformationMore_1_8a"
+                    android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/textInformationMore_7b"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"/>
+
+                <TextView
+                    android:id="@+id/textInformationMore_8b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textInformationMore_1_8a"
+                    android:layout_alignBottom="@+id/textInformationMore_1_8a"
+                    android:layout_alignLeft="@+id/textInformationMore_1b"
+                    android:layout_alignStart="@+id/textInformationMore_1b"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                    android:textSize="14sp"
+                    android:textStyle="normal|bold" />
+
+            </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:text="@string/activity_settings_information_1_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textInformationMore_1_9a"
+                        android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
+                        android:textSize="16sp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textInformationMore_9b"
+                        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_below="@+id/textInformationMore_1_9a" />
+
+                </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
